@@ -8,7 +8,7 @@ var container = document.getElementById("container");
 
 for (var i = 1; i <= IMAGE_COUNT; i++) {
     var img = document.createElement("img");
-    var src = `img/${i}.jpg`;
+    var src = `img/${i}.jpeg`;
     img.src = src;
     container.appendChild(img);
 }
