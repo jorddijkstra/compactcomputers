@@ -1,0 +1,36 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+hr {
+    background-color: #fff;
+}
+
+img {
+  width: 25%;
+  margin-right: 4px;
+}
+
+#container {
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#container img {
+    animation: moveSlideshow 15s linear infinite;
+}
+
+@keyframes moveSlideshow {
+    100% { 
+        transform: translateX(-500%);  
+    }
+}
