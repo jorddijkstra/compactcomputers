@@ -20,7 +20,7 @@ img {
 
 #container {
   white-space: nowrap;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
