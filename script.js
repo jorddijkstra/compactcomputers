@@ -1,22 +1,22 @@
 const images = [
     {
-        "src": "img/1.jpg",
+        "src": "img/1.jpeg",
         "link": "project1.html"
     },
     {
-        "src": "img/2.jpg",
+        "src": "img/2.jpeg",
         "link": "project2.html"
     },
     {
-        "src": "img/3.jpg",
+        "src": "img/3.jpeg",
         "link": "project3.html"
     },
     {
-        "src": "img/4.jpg",
+        "src": "img/4.jpeg",
         "link": "project4.html"
     },
     {
-        "src": "img/5.jpg",
+        "src": "img/5.jpeg",
         "link": "project5.html"
     }
 ];
@@ -27,11 +27,18 @@ const IMG_COUNT = images.length;
 // Step 1: Creating a simple slider
 var container = document.getElementById('container');
 
-for (var i = 1; i <= IMG_COUNT; i++) {
+// create img elements and load source
+for (var imgData of images) {
+    // create anchor with href
+    var anchor = document.createElement('a');
+    anchor.href = imgData.link;
+
+    // create image with source
     var img = document.createElement('img');
-    var src = `img/${i}.jpeg`;
-    img.src = src;
-    container.appendChild(img);
+    img.src = imgData.src;
+
+    anchor.appendChild(img);
+    container.appendChild(anchor);
 }
 
 // Step 2: Preparing for infinite scroll

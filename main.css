@@ -1,3 +1,7 @@
+html {
+    font-family: helvetica, sans-serif;
+}
+
 body {
     background-color: #000;
     color: #fff;
@@ -5,7 +9,6 @@ body {
 
 h1 {
     font-size: 50px;
-    font-family: helvetica, sans-serif;
 }
 
 hr {
