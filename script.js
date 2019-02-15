@@ -1,77 +1,49 @@
-const images = [
-    {
-        "src": "img/1.jpeg",
-        "link": "project1.html"
-    },
-    {
-        "src": "img/2.jpeg",
-        "link": "project2.html"
-    },
-    {
-        "src": "img/3.jpeg",
-        "link": "project3.html"
-    },
-    {
-        "src": "img/4.jpeg",
-        "link": "project4.html"
-    },
-    {
-        "src": "img/5.jpeg",
-        "link": "project5.html"
-    }
-];
 
-const IMG_COUNT = images.length;
+const IMG_COUNT = homePageImages.length;
 
 
 // Step 1: Creating a simple slider
-var container = document.getElementById('container');
+var container = $('#container');
 
 // create img elements and load source
-for (var imgData of images) {
-    // create anchor with href
-    var anchor = document.createElement('a');
-    anchor.href = imgData.link;
-
-    // create image with source
-    var img = document.createElement('img');
-    img.src = imgData.src;
-
-    anchor.appendChild(img);
-    container.appendChild(anchor);
+for (var img of homePageImages) {
+    var imgDiv = $(`<div class="image"><a href="${img.href}"></a></div>`);
+    imgDiv.css('background-image', `url(${img.src})`);
+    container.append(imgDiv);
 }
 
 // Step 2: Preparing for infinite scroll
 clones1 = [];
 clones2 = [];
 // get first image
-var firstImg = document.images[0].cloneNode(false);
+//var firstImg = document.images[0].cloneNode(false);
+var firstImg = $('.image').eq(0).clone();
 // loop over rest of images
 for (let i = 1; i < IMG_COUNT - 1; i++) {
-    clones1.push(document.images[i].cloneNode(false));
-    clones2.push(document.images[i].cloneNode(false));
+    clones1.push($('.image').eq(i).clone());
+    clones2.push($('.image').eq(i).clone());
 }
 // and get last image
-var lastImg = document.images[IMG_COUNT - 1].cloneNode(false);
+var lastImg = $('.image').eq(IMG_COUNT - 1).clone();
 
 
 
 // start inserting
-container.insertBefore(lastImg, document.images[0]);
+lastImg.insertBefore($('.image').eq(0));
 for (let i = clones1.length - 1; i >= 0; i--) {
-    container.insertBefore(clones1[i], document.images[0]);
+    clones1[i].insertBefore($('.image').eq(0));
 }
 
 // and appending
-container.appendChild(firstImg);
+container.append(firstImg);
 for (let i = 0; i < clones1.length; i++) {
-    container.appendChild(clones2[i]);
+    container.append(clones2[i]);
 }
 
 // Step 3: Adding an infinite scroll effect
-var sliderStartForward = document.images[IMG_COUNT - 1].getBoundingClientRect().left;
-var sliderEndForward = document.images[2 * (IMG_COUNT - 1)].getBoundingClientRect().right - 10;
-var sliderStartBackward = document.images[IMG_COUNT - 1].getBoundingClientRect().right;
+var sliderStartForward = $('.image').eq(IMG_COUNT - 1).getBoundingClientRect().left;
+var sliderEndForward = $('.image').eq(2 * (IMG_COUNT - 1)).getBoundingClientRect().right - 10;
+var sliderStartBackward = $('.image').eq(IMG_COUNT - 1).getBoundingClientRect().right;
 
 // We're repositionning our slider to our first true image
 // as currently the first image we're seing is a clone
