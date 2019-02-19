@@ -1,17 +1,17 @@
 $.getJSON( "../data/data.json", function(data) {
-    
     // get parameters (project number)
     let params = new URLSearchParams(window.location.search).get('p');
     
     images = data[params].images;
     const IMG_COUNT = Object.keys(images).length;
+
     // Step 1: Creating a simple slider
     var container = $('#container');
 
     // create img elements and load source
     for (let i in images) {
-        var imgDiv = $(`<div class="image"><a href="project.html?p=${i}"></a></div>`);
-        imgDiv.css('background-image', `url(${images[i].src})`);
+        var imgDiv = $(`<div class="image"><a href="${images[i]}"></a></div>`);
+        imgDiv.css('background-image', `url(${images[i]})`);
         container.append(imgDiv);
     }
 
@@ -64,4 +64,6 @@ $.getJSON( "../data/data.json", function(data) {
         }
     });
 
+}).fail(function() {
+    alert('error loading data');
 });

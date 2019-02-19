@@ -3,9 +3,14 @@
 ### Data toevoegen aan `data/data.json`
 Plak dit achter het laatste object:
 ```json
-,
-"{vorige nmr + 1}": {
-    "src": "{pad naar beste foto}",
-    "images": ["{pad naar foto 1}", "{pad naar foto 2}"]
+"5": {
+    "src": "img/casio/5.jpeg",
+    "images": [
+        "img/casio/1.png", 
+        "img/casio/2.png", 
+        "img/casio/3.png", 
+        "img/casio/4.png", 
+        "img/casio/5.png"
+    ]
 }
 ```
