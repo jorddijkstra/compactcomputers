@@ -1,6 +1,8 @@
 $.getJSON( "../data/data.json", function(data) {
     // get parameters (project number)
     let params = new URLSearchParams(window.location.search).get('p');
+
+    document.title = `${params} - Compact Computers`;
     
     images = data[params].images;
     const IMG_COUNT = Object.keys(images).length;
