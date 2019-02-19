@@ -1,0 +1,22 @@
+{
+    "1": {
+        "src": "img/1.jpeg",
+        "images": ["img/1.jpg", "img/2.jpg"]
+    },
+    "2": {
+        "src": "img/2.jpeg",
+        "images": []
+    },
+    "3": {
+        "src": "img/3.jpeg",
+        "images": []
+    },
+    "4": {
+        "src": "img/4.jpeg",
+        "images": []
+    },
+    "5": {
+        "src": "img/5.jpeg",
+        "images": []
+    }
+}
