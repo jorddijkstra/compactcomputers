@@ -1,10 +1,12 @@
 $.getJSON( "../data/data.json", function(data) {
     // get parameters (project number)
-    let params = new URLSearchParams(window.location.search).get('p');
+    let page = new URLSearchParams(window.location.search).get('p');
 
-    document.title = `${params} - Compact Computers`;
+    document.title = `${page} - Compact Computers`;
+    $('#project_name').text(page.toUpperCase());
+    $('#desc').text(data[page].description);
     
-    images = data[params].images;
+    images = data[page].images;
     const IMG_COUNT = Object.keys(images).length;
 
     // Step 1: Creating a simple slider

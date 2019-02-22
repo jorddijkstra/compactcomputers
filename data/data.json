@@ -1,19 +1,26 @@
 {
     "1": {
         "src": "img/1.jpeg",
-        "images": ["img/1.jpg", "img/2.jpg"]
+        "images": [
+            "img/1.jpg",
+            "img/2.jpg"
+        ],
+        "description": ""
     },
-    "2": {
-        "src": "img/2.jpeg",
-        "images": []
+    "keyboards": {
+        "src": "img/keyboards/header.jpeg",
+        "images": [],
+        "description": ""
     },
     "3": {
         "src": "img/3.jpeg",
-        "images": []
+        "images": [],
+        "description": ""
     },
-    "4": {
-        "src": "img/4.jpeg",
-        "images": []
+    "lego-computer": {
+        "src": "img/lego-computer/header.jpeg",
+        "images": [],
+        "description": ""
     },
     "casio": {
         "src": "img/casio/5.jpeg",
@@ -23,6 +30,8 @@
             "img/casio/3.png", 
             "img/casio/4.png", 
             "img/casio/5.png"
-        ]
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit ut leo nec imperdiet. Aliquam finibus, orci in malesuada rhoncus, arcu massa semper enim, eget fringilla ex metus ut diam. Maecenas blandit hendrerit eros, vel molestie odio fermentum vel. Integer suscipit eget lectus eget viverra. Pellentesque elementum nec odio sed efficitur. Quisque scelerisque malesuada elementum. Vestibulum auctor blandit interdum. Cras nec lorem vel purus eleifend auctor eget non purus. Phasellus ac ante euismod, molestie nisl ullamcorper, dictum arcu. Phasellus non posuere turpis. Curabitur et velit et lacus pellentesque iaculis."
+    
     }
 }
