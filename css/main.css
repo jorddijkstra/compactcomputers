@@ -3,8 +3,14 @@ html {
 }
 
 body {
-    background-color: #000;
+    background-color: #1a1a1a;
     color: #fff;
+}
+
+/* links are always white */
+a, a:visited, a:hover, a:active {
+    color: #fff;
+    text-decoration: none;
 }
 
 h1 {
@@ -15,12 +21,27 @@ hr {
     background-color: #fff;
 }
 
+#project_name {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+#project_name:hover {
+    cursor: default;
+}
+
+#project_name span {
+    float: right;
+}
+
 .image {
     width: 25%;
     margin-right: 4px;
     height: 200px;
-    background-size: 100% 100%;
+    background-position: center;
     background-repeat: none;
+    background-size: cover;
     display: inline-block;
 }
 
