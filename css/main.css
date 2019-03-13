@@ -3,7 +3,9 @@ html {
 }
 
 body {
-    background-color: #1a1a1a;
+    /* grey background */
+    /* background-color: #1a1a1a; */
+    background-color: #000;
     color: #fff;
 }
 
@@ -13,8 +15,18 @@ a, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
-h1 {
-    font-size: 50px;
+#logo {
+    width: 40%;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #logo {
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
 }
 
 hr {
@@ -53,6 +65,7 @@ hr {
 
 #container {
   white-space: nowrap;
+  /* don't show where images are going / coming from */
   overflow: hidden;
 }
 

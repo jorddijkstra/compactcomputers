@@ -1,4 +1,4 @@
-$.getJSON( "../data/data.json", function(images) {
+$.getJSON( "data/data.json", function(images) {
     const IMG_COUNT = Object.keys(images).length;
     // Step 1: Creating a simple slider
     var container = $('#container');

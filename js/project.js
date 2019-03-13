@@ -1,4 +1,4 @@
-$.getJSON( "../data/data.json", function(data) {
+$.getJSON( "data/data.json", function(data) {
     // get parameters (project number)
     let page = new URLSearchParams(window.location.search).get('p');
 
