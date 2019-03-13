@@ -81,14 +81,22 @@ $.getJSON( "data/data.json", function(data) {
     // get parameters (project number)
     let page = new URLSearchParams(window.location.search).get('p');
 
+    // create page title
     document.title = `${page} - Compact Computers`;
+    // create name of slider
     $('#project_name').text(page.toUpperCase());
+    // add link to about page
+    $('#project_name').append('<span><a href="about.html">ABOUT</a></span>');
+    
+    // add description
     $('#desc').text(data[page].description);
     
+    // define images and count them
     images = data[page].images;
     const IMG_COUNT = Object.keys(images).length;
 
-    createSlider(images, IMG_COUNT, 1);
+    // create the slider
+    createSlider(images, IMG_COUNT, page);
 }).fail(function() {
     alert('error loading data');
 });
