@@ -9,10 +9,10 @@
     },
     "keyboards": {
         "src": "img/keyboards/header.jpeg",
-        "images": ["img/keyboards/header.jpeg", 
-            "img/keyboards/1.png", 
-            "img/keyboards/2.png", 
-            "img/keyboards/3.png", 
+        "images": ["img/keyboards/header.jpeg",
+            "img/keyboards/1.png",
+            "img/keyboards/2.png",
+            "img/keyboards/3.png",
             "img/keyboards/4.png",
             "img/keyboards/5.png"
         ],
@@ -31,18 +31,31 @@
         "category": "",
         "description": ""
     },
+    "Reflection-Studio": {
+        "src": "img/reflectionstudio/reflectionstudio1.png",
+        "images": ["img/reflectionstudio/reflectionstudio1.png",
+            "img/reflectionstudio/reflectionstudio2.gif",
+            "img/reflectionstudio/reflectionstudio3.gif",
+            "img/reflectionstudio/reflectionstudio4.gif",
+            "img/reflectionstudio/reflectionstudio5.jpg",
+            "img/reflectionstudio/reflectionstudio6.jpg",
+            "img/reflectionstudio/reflectionstudio7.jpg",
+            "img/reflectionstudio/reflectionstudio8.gif"],
+        "category": "",
+        "description": "This one started pretty straightforward. I was looking for studio lights online late at night because I wanted to photograph something I’d been working on. When I came back into my room after grabbing something to eat I noticed how my tv screen was lighting up almost my entire room. So I decided to flip the screen horizontally and started experimenting with the light that shone down on the studio I had built."
+    },
     "casio": {
         "src": "img/casio/header.jpeg",
         "images": [
             "img/casio/header.jpeg",
-            "img/casio/1.png", 
-            "img/casio/2.png", 
-            "img/casio/3.png", 
-            "img/casio/4.png", 
+            "img/casio/1.png",
+            "img/casio/2.png",
+            "img/casio/3.png",
+            "img/casio/4.png",
             "img/casio/5.png"
         ],
         "category": "",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit ut leo nec imperdiet. Aliquam finibus, orci in malesuada rhoncus, arcu massa semper enim, eget fringilla ex metus ut diam. Maecenas blandit hendrerit eros, vel molestie odio fermentum vel. Integer suscipit eget lectus eget viverra. Pellentesque elementum nec odio sed efficitur. Quisque scelerisque malesuada elementum. Vestibulum auctor blandit interdum. Cras nec lorem vel purus eleifend auctor eget non purus. Phasellus ac ante euismod, molestie nisl ullamcorper, dictum arcu. Phasellus non posuere turpis. Curabitur et velit et lacus pellentesque iaculis."
-    
+
     }
 }
