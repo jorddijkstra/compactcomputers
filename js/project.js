@@ -1,3 +1,33 @@
+function getScaledWidth(image, height) {
+    var img = new Image();
+    img.src = image;
+
+    // get the real sizes of the image
+    var realWidth = img.naturalWidth;
+    var realHeight = img.naturalHeight;
+
+    // find the new scaled width
+    /*
+    scaling factor is new height divided by old height,
+    then we multiply this with the old width to get the new one.
+
+    -----------------------------------------------------
+    |                                                   |
+    |                                                   | 20px
+    |                                                   |
+    |                                                   |
+    |--------------------                               |
+    |                   |                               |
+    |                   | 10px                          |
+    |         ?         |                               |
+    -----------------------------------------------------
+                                    40px
+    */
+    var newWidth = realWidth * height / realHeight;
+
+    return newWidth;
+}
+
 $.getJSON( "data/data.json", function(data) {
     // get parameters (project number)
     let page = new URLSearchParams(window.location.search).get('p');
@@ -16,6 +46,7 @@ $.getJSON( "data/data.json", function(data) {
     for (let i in images) {
         var imgDiv = $(`<div class="image"><a href="${images[i]}"></a></div>`);
         imgDiv.css('background-image', `url(${images[i]})`);
+        imgDiv.width(getScaledWidth(images[i], 200));
         container.append(imgDiv);
     }
 

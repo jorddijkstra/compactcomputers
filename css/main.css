@@ -48,7 +48,7 @@ hr {
 }
 
 .image {
-    width: 25%;
+    /* width: 25%; */
     margin-right: 4px;
     height: 200px;
     background-position: center;
@@ -79,7 +79,9 @@ hr {
 
 @keyframes moveSlideshow {
     100% { 
-        transform: translateX(-500%);  
+        /* transform: translateX(-500%); */  
+        /* use absolute value to allow images with different widths */
+        transform: translateX(-2000px);  
     }
 }
 

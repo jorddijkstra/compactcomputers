@@ -1,3 +1,35 @@
+function getScaledWidth(image, height) {
+    var img = new Image();
+    img.src = image;
+
+    // get the real sizes of the image
+    var realWidth = img.naturalWidth;
+    var realHeight = img.naturalHeight;
+
+    // find the new scaled width
+    /*
+    scaling factor is new height divided by old height,
+    then we multiply this with the old width to get the new one.
+
+    -----------------------------------------------------
+    |                                                   |
+    |                                                   | 20px
+    |                                                   |
+    |                                                   |
+    |--------------------                               |
+    |                   |                               |
+    |                   | 10px                          |
+    |         ?         |                               |
+    -----------------------------------------------------
+                                    40px
+    */
+    var newWidth = realWidth * height / realHeight;
+
+    return newWidth;
+}
+
+
+
 $.getJSON( "data/data.json", function(images) {
     const IMG_COUNT = Object.keys(images).length;
     // Step 1: Creating a simple slider
@@ -7,6 +39,7 @@ $.getJSON( "data/data.json", function(images) {
     for (let i in images) {
         var imgDiv = $(`<div class="image"><a href="project.html?p=${i}"></a></div>`);
         imgDiv.css('background-image', `url(${images[i].src})`);
+        imgDiv.width(getScaledWidth(images[i].src, 200));
         container.append(imgDiv);
     }
 
