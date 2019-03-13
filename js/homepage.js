@@ -23,7 +23,7 @@ function createSlider(images, IMG_COUNT, id) {
     for (let i in images) {
         var imgDiv = $(`<div class="image"><a href="project.html?p=${i}"></a></div>`);
         imgDiv.css('background-image', `url(${images[i].src})`);
-        imgDiv.width(getScaledWidth(images[i].src, 200));
+        imgDiv.width(getScaledWidth(images[i].src, 300));
         container.append(imgDiv);
     }
 
