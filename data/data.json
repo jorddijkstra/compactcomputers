@@ -1,10 +1,10 @@
 {
-    "1": {
-        "src": "img/1.jpeg",
+    "vertrouwen-online-bestaat-niet": {
+        "src": "img/vertrouwen/header.jpeg",
         "images": [
-            "img/1.jpg",
-            "img/2.jpg"
+            "img/vertrouwen/header.jpeg"
         ],
+        "category": "",
         "description": ""
     },
     "keyboards": {
@@ -16,16 +16,19 @@
             "img/keyboards/4.png",
             "img/keyboards/5.png"
         ],
+        "category": "",
         "description": ""
     },
     "3": {
         "src": "img/3.jpeg",
         "images": [],
+        "category": "",
         "description": ""
     },
     "lego-computer": {
         "src": "img/lego-computer/header.jpeg",
         "images": [],
+        "category": "",
         "description": ""
     },
     "casio": {
@@ -38,6 +41,7 @@
             "img/casio/4.png", 
             "img/casio/5.png"
         ],
+        "category": "",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit ut leo nec imperdiet. Aliquam finibus, orci in malesuada rhoncus, arcu massa semper enim, eget fringilla ex metus ut diam. Maecenas blandit hendrerit eros, vel molestie odio fermentum vel. Integer suscipit eget lectus eget viverra. Pellentesque elementum nec odio sed efficitur. Quisque scelerisque malesuada elementum. Vestibulum auctor blandit interdum. Cras nec lorem vel purus eleifend auctor eget non purus. Phasellus ac ante euismod, molestie nisl ullamcorper, dictum arcu. Phasellus non posuere turpis. Curabitur et velit et lacus pellentesque iaculis."
     
     }

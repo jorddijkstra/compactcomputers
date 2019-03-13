@@ -81,10 +81,12 @@ $.getJSON( "data/data.json", function(data) {
     // get parameters (project number)
     let page = new URLSearchParams(window.location.search).get('p');
 
+    // change scores with spaces to look nice
+    var pageFormat = page.replace(/-/g, ' ');
     // create page title
-    document.title = `${page} - Compact Computers`;
+    document.title = `${pageFormat} - Compact Computers`;
     // create name of slider
-    $('#project_name').text(page.toUpperCase());
+    $('#project_name').text(pageFormat.toUpperCase());
     // add link to about page
     $('#project_name').append('<span><a href="about.html">ABOUT</a></span>');
     
