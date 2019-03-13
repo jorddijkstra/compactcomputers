@@ -7,40 +7,17 @@ function getScaledWidth(image, height) {
     var realHeight = img.naturalHeight;
 
     // find the new scaled width
-    /*
-    scaling factor is new height divided by old height,
-    then we multiply this with the old width to get the new one.
-
-    -----------------------------------------------------
-    |                                                   |
-    |                                                   | 20px
-    |                                                   |
-    |                                                   |
-    |--------------------                               |
-    |                   |                               |
-    |                   | 10px                          |
-    |         ?         |                               |
-    -----------------------------------------------------
-                                    40px
-    */
-    var newWidth = realWidth * height / realHeight;
-
-    return newWidth;
+    return realWidth * height / realHeight;
 }
 
-$.getJSON( "data/data.json", function(data) {
-    // get parameters (project number)
-    let page = new URLSearchParams(window.location.search).get('p');
 
-    document.title = `${page} - Compact Computers`;
-    $('#project_name').text(page.toUpperCase());
-    $('#desc').text(data[page].description);
-    
-    images = data[page].images;
-    const IMG_COUNT = Object.keys(images).length;
-
-    // Step 1: Creating a simple slider
-    var container = $('#container');
+function createSlider(images, IMG_COUNT, id) {
+    // create slider elements
+    var newContainer = $(`<div class="container" id="${id}"></div>`);
+    $('<hr>').insertBefore('#desc');
+    $(newContainer).insertBefore('#desc');
+    $('<hr>').insertBefore('#desc');
+    var container = $(`#${id}`);
 
     // create img elements and load source
     for (let i in images) {
@@ -98,7 +75,20 @@ $.getJSON( "data/data.json", function(data) {
             container.scrollLeft = sliderStartForward;
         }
     });
+}
 
+$.getJSON( "data/data.json", function(data) {
+    // get parameters (project number)
+    let page = new URLSearchParams(window.location.search).get('p');
+
+    document.title = `${page} - Compact Computers`;
+    $('#project_name').text(page.toUpperCase());
+    $('#desc').text(data[page].description);
+    
+    images = data[page].images;
+    const IMG_COUNT = Object.keys(images).length;
+
+    createSlider(images, IMG_COUNT, 1);
 }).fail(function() {
     alert('error loading data');
 });

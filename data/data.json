@@ -9,7 +9,13 @@
     },
     "keyboards": {
         "src": "img/keyboards/header.jpeg",
-        "images": [],
+        "images": ["img/keyboards/header.jpeg", 
+            "img/keyboards/1.png", 
+            "img/keyboards/2.png", 
+            "img/keyboards/3.png", 
+            "img/keyboards/4.png",
+            "img/keyboards/5.png"
+        ],
         "description": ""
     },
     "3": {
@@ -25,6 +31,7 @@
     "casio": {
         "src": "img/casio/header.jpeg",
         "images": [
+            "img/casio/header.jpeg",
             "img/casio/1.png", 
             "img/casio/2.png", 
             "img/casio/3.png", 

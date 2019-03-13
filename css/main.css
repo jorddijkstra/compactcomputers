@@ -63,7 +63,7 @@ hr {
     height: 100%;
 }
 
-#container {
+.container {
   white-space: nowrap;
   /* don't show where images are going / coming from */
   overflow: hidden;
@@ -73,7 +73,7 @@ hr {
     display: none;
 }
 
-#container .image {
+.container .image {
     animation: moveSlideshow 15s linear infinite;
 }
 

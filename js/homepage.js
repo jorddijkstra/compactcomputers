@@ -7,33 +7,17 @@ function getScaledWidth(image, height) {
     var realHeight = img.naturalHeight;
 
     // find the new scaled width
-    /*
-    scaling factor is new height divided by old height,
-    then we multiply this with the old width to get the new one.
-
-    -----------------------------------------------------
-    |                                                   |
-    |                                                   | 20px
-    |                                                   |
-    |                                                   |
-    |--------------------                               |
-    |                   |                               |
-    |                   | 10px                          |
-    |         ?         |                               |
-    -----------------------------------------------------
-                                    40px
-    */
-    var newWidth = realWidth * height / realHeight;
-
-    return newWidth;
+    return realWidth * height / realHeight;
 }
 
-
-
-$.getJSON( "data/data.json", function(images) {
-    const IMG_COUNT = Object.keys(images).length;
-    // Step 1: Creating a simple slider
-    var container = $('#container');
+function createSlider(images, IMG_COUNT, id) {
+    // create slider elements
+    var newContainer = $(`<div class="container" id="${id}"></div>`);
+    $('<hr>').insertAfter('#project_name');
+    $(newContainer).insertAfter('#project_name');
+    $('<hr>').insertAfter('#project_name');
+    var container = $(`#${id}`);
+    
 
     // create img elements and load source
     for (let i in images) {
@@ -91,5 +75,15 @@ $.getJSON( "data/data.json", function(images) {
             container.scrollLeft = sliderStartForward;
         }
     });
+}
 
+$.getJSON( "data/data.json", function(data) {
+    
+    // get length of image list
+    const IMG_COUNT = Object.keys(data).length;
+    
+    // create slider with id 0
+    createSlider(data, IMG_COUNT, 'a');
+}).fail(function() {
+    alert('error loading data');
 });
