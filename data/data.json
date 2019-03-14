@@ -5,7 +5,8 @@
            "img/ahkeyboard/1.png",
            "img/ahkeyboard/2.png",
            "img/ahkeyboard/3.png",
-           "img/ahkeyboard/4.png"],
+           "img/ahkeyboard/4.png"
+         ],
         "category": "",
         "description": ""
 
@@ -17,7 +18,8 @@
            "img/asortedprototypes/1.png",
            "img/asortedprototypes/2.gif",
            "img/asortedprototypes/3.png",
-           "img/asortedprototypes/4.png"],
+           "img/asortedprototypes/4.png"
+         ],
         "category": "",
         "description": ""
 
@@ -32,7 +34,8 @@
            "img/vgabillboards/4.png",
            "img/vgabillboards/5.gif",
            "img/vgabillboards/6.png",
-           "img/vgabillboards/7.png"],
+           "img/vgabillboards/7.png"
+         ],
         "category": "",
         "description": ""
 
@@ -47,7 +50,8 @@
            "img/reflectionstudio/4.png",
            "img/reflectionstudio/5.gif",
            "img/reflectionstudio/6.gif",
-           "img/reflectionstudio/7.png"],
+           "img/reflectionstudio/7.png"
+         ],
         "category": "",
         "description": "I was looking for studio lights online late at night because I wanted to photograph something I’d been working on. When I came back into my room after grabbing something to eat I noticed how my tv screen was lighting up almost my entire room. So I decided to flip the screen horizontally and started experimenting with the light that shone down on the studio I had built."
     },
@@ -60,7 +64,8 @@
                "img/futurephotos/3.png",
                "img/futurephotos/4.png",
                "img/futurephotos/5.png",
-               "img/futurephotos/6.png"],
+               "img/futurephotos/6.png"
+             ],
             "category": "",
             "description": ""
 
@@ -74,7 +79,8 @@
                "img/socialmediadesigns/3.gif",
                "img/socialmediadesigns/4.png",
                "img/socialmediadesigns/5.gif",
-               "img/socialmediadesigns/6.png"],
+               "img/socialmediadesigns/6.png"
+             ],
             "category": "",
             "description": ""
 
@@ -89,9 +95,10 @@
                "img/stylesearching/3.png",
                "img/stylesearching/4.png",
                "img/stylesearching/5.gif",
-               "img/stylesearching/6.png"],
+               "img/stylesearching/6.png"
+             ],
             "category": "",
             "description": ""
 
-      },
+      }
 }
