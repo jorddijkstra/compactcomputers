@@ -33,16 +33,16 @@
     },
     "Reflection-Studio": {
         "src": "img/reflectionstudio/reflectionstudio1.png",
-        "images": ["img/reflectionstudio/reflectionstudio1.png",
-            "img/reflectionstudio/reflectionstudio2.gif",
-            "img/reflectionstudio/reflectionstudio3.gif",
-            "img/reflectionstudio/reflectionstudio4.gif",
-            "img/reflectionstudio/reflectionstudio5.jpg",
-            "img/reflectionstudio/reflectionstudio6.jpg",
-            "img/reflectionstudio/reflectionstudio7.jpg",
-            "img/reflectionstudio/reflectionstudio8.gif"],
+        "images": ["img/reflectionstudio/1.png",
+            "img/reflectionstudio/2.gif",
+            "img/reflectionstudio/3.gif",
+            "img/reflectionstudio/4.gif",
+            "img/reflectionstudio/5.jpg",
+            "img/reflectionstudio/6.jpg",
+            "img/reflectionstudio/7.png",
+            "img/reflectionstudio/8.gif"],
         "category": "",
-        "description": "This one started pretty straightforward. I was looking for studio lights online late at night because I wanted to photograph something I’d been working on. When I came back into my room after grabbing something to eat I noticed how my tv screen was lighting up almost my entire room. So I decided to flip the screen horizontally and started experimenting with the light that shone down on the studio I had built."
+        "description": "I was looking for studio lights online late at night because I wanted to photograph something I’d been working on. When I came back into my room after grabbing something to eat I noticed how my tv screen was lighting up almost my entire room. So I decided to flip the screen horizontally and started experimenting with the light that shone down on the studio I had built."
     },
     "casio": {
         "src": "img/casio/header.jpeg",
