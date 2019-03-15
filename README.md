@@ -18,3 +18,8 @@ Plak dit achter het laatste object:
 # Test file
 Kopieer altijd de inhoud van het bestand `data/data.json` op 
 [deze](https://jsonlint.com/) om te checken op fouten.
+
+# TODO
+- favicon.ico
+- content about.html
+- working gallery (categories)
