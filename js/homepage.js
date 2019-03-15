@@ -1,15 +1,3 @@
-function getScaledWidth(image, height) {
-    var img = new Image();
-    img.src = image;
-
-    // get the real sizes of the image
-    var realWidth = img.naturalWidth;
-    var realHeight = img.naturalHeight;
-
-    // find the new scaled width
-    return realWidth * height / realHeight;
-}
-
 function createSlider(images, IMG_COUNT, id) {
     // create slider elements
     var newContainer = $(`<div class="container" id="${id}"></div>`);
@@ -21,10 +9,9 @@ function createSlider(images, IMG_COUNT, id) {
 
     // create img elements and load source
     for (let i in images) {
-        var imgDiv = $(`<div class="image"><a href="project.html?p=${i}"></a></div>`);
-        imgDiv.css('background-image', `url(${images[i].src})`);
-        imgDiv.width(getScaledWidth(images[i].src, 300));
-        container.append(imgDiv);
+        var img = $(`<a class="image" href="project.html?p=${i}">
+            <img src="${images[i].src}"/></a>`);
+        container.append(img);
     }
 
     // Step 2: Preparing for infinite scroll
