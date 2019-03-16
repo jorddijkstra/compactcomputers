@@ -69,10 +69,16 @@ hr {
     display: inline-block;
 }
 
+body { 
+    /* prevent body scrolling */
+    overflow-y: hidden;
+}
+
 .container {
-  white-space: nowrap;
-  /* don't show where images are going / coming from */
-  overflow: hidden;
+    /* images next to eachother */
+    white-space: nowrap;
+    /* let user scroll through galery */
+    overflow: scroll;
 }
 
 ::-webkit-scrollbar {
@@ -119,7 +125,7 @@ hr {
     text-align: center;
     color: #fff;
     background-color: #000;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
 }
 
 @media screen and (max-width: 600px) {
