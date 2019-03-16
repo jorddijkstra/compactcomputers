@@ -7,12 +7,12 @@
            "img/ahkeyboard/3.png",
            "img/ahkeyboard/4.png"
          ],
-        "category": "",
-        "description": ""
+        "category": "spatial-sketches",
+        "description": "Our vocabulary isn't enough to express ourselves. Often we find ourself silent when someone needs it the most because we're “at a loss for words”. With online chatting moving a big part of our social interaction to the virtual world it’s even harder. Bound to our keyboard we are even more limited to what we can say. This made me wonder, how far can we go? what is the ultimate minimum at which we can still share our feelings online? To explore this concept I built a keyboard with only the “A” and “H” available."
 
     },
 
-    "asorted-prototypes": {
+    "Asorted-Prototypes": {
         "src": "img/asortedprototypes/2.gif",
         "images": [
            "img/asortedprototypes/1.png",
@@ -20,12 +20,12 @@
            "img/asortedprototypes/3.png",
            "img/asortedprototypes/4.png"
          ],
-        "category": "",
+        "category": "spatial-sketches",
         "description": ""
 
     },
 
-    "vga-billboards": {
+    "Vga-Billboards": {
         "src": "img/vgabillboards/1.png",
         "images": [
            "img/vgabillboards/1.png",
@@ -34,14 +34,16 @@
            "img/vgabillboards/4.png",
            "img/vgabillboards/5.gif",
            "img/vgabillboards/6.png",
-           "img/vgabillboards/7.png"
+           "img/vgabillboards/7.gif",
+           "img/vgabillboards/8.png"
          ],
-        "category": "",
-        "description": ""
+        "category": "spatial-sketches",
+        "description": "“HD” is a relative thing. A piece of technological equipment once hyped about because it was “the new generation of tech” Is thrown away when the next generation is approaching. While searching for ways to stop this cycle I found a github user named “smaffer” or Sandro Maffiodo. He found a way to turn an Arduino into a small gpu for pixel art rendering. I started experimenting with the possibilities and limits of this new / old hybrid tech. I found that if you connect one of those chips to a vga display it’s a super cheap and easy way to make your own small billboard.
+"
 
     },
 
-    "Reflection-Studio": {
+    "Backlight-Studio": {
         "src": "img/reflectionstudio/1.png",
         "images": [
            "img/reflectionstudio/1.png",
@@ -52,11 +54,11 @@
            "img/reflectionstudio/6.gif",
            "img/reflectionstudio/7.png"
          ],
-        "category": "",
+        "category": "spatial-sketches",
         "description": "I was looking for studio lights online late at night because I wanted to photograph something I’d been working on. When I came back into my room after grabbing something to eat I noticed how my tv screen was lighting up almost my entire room. So I decided to flip the screen horizontally and started experimenting with the light that shone down on the studio I had built."
     },
 
-        "future-photos": {
+        "Future-Photos": {
             "src": "img/futurephotos/4.png",
             "images": [
                "img/futurephotos/1.png",
@@ -66,11 +68,12 @@
                "img/futurephotos/5.png",
                "img/futurephotos/6.png"
              ],
-            "category": "",
-            "description": ""
+            "category": "graphic-goods",
+            "description": "The city of ‘s-Hertogenbosch isn’t all too futuristic, no high skyscrapers, no underground black markets, no drone surveillance, not even a subway or metro. Also its inhabitants are mostly old people, and most of them aren’t that fond of the future. So I went out one night to capture some of the city’s futuristic vibes and used the darkness to add futuristic elements to these photographs. I later started ‘’futurizing’’ people as well, because what’s a city without its inhabitants?
+"
       },
 
-        "socialmedia-designs": {
+        "Socialmedia-Designs": {
             "src": "img/socialmediadesigns/4.png",
             "images": [
                "img/socialmediadesigns/1.png",
@@ -80,11 +83,11 @@
                "img/socialmediadesigns/5.gif",
                "img/socialmediadesigns/6.png"
              ],
-            "category": "",
-            "description": ""
+            "category": "graphic-goods",
+            "description": "I used to do free designs for facebook groups and events, this is a very small collection I still wanted to add because I think they turned out well and visually describe who I was in a early stage of design."
       },
 
-        "style-searching": {
+        "Style-Searching": {
             "src": "img/stylesearching/5.gif",
             "images": [
                "img/stylesearching/0.png",
@@ -95,7 +98,27 @@
                "img/stylesearching/5.gif",
                "img/stylesearching/6.png"
              ],
-            "category": "",
-            "description": ""
-      }
+            "category": "graphic-goods",
+            "description": "Although I know I’ll never be done searching for it, I wanted to make a collection of all logos I had in this past few years. As a spatial designer, graphic design has always been more of a challenge for me. It just doesn't comes as naturally as spatial design, so I always try to keep searching for what I like and using it in my own design."
+      },
+
+      "Unit01-Brickbase": {
+          "src": "img/unit01brickbase/5.png",
+          "images": [
+             "img/unit01brickbase/01.png",
+             "img/unit01brickbase/0.png",
+             "img/unit01brickbase/1.png",
+             "img/unit01brickbase/2.png",
+             "img/unit01brickbase/3.png",
+             "img/unit01brickbase/4.png",
+             "img/unit01brickbase/5.png",
+             "img/unit01brickbase/6.png",
+             "img/unit01brickbase/7.png"
+             "img/unit01brickbase/8.png",
+             "img/unit01brickbase/9.png"
+           ],
+          "category": "compact-computers",
+          "description": "Personally I like to see the hardware i’m using, so I decided to give building my own pc a shot.When looking for a powerful (gaming) computer you’ll probably come across the big, bulky and led strip riden towers which will consume about half your desk when placed on top of it, or the ultra slick closed aluminum boxes you can hide under your desk. This gave me 2 starting points; a see through case for my computer that would fit on my desk. I also wanted the case to be compact but modular for further expansion, so I used legos to build the base of the case.
+"
+    },
 }
