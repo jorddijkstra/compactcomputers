@@ -71,7 +71,7 @@ hr {
 
 body { 
     /* prevent body scrolling */
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .container {
@@ -131,5 +131,10 @@ body {
 @media screen and (max-width: 600px) {
     #popup {
         width: 80%;
+    }
+
+    #desc {
+        width: 80%;
+        margin-top: 40px;
     }
 }
