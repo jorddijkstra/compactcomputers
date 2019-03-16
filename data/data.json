@@ -114,5 +114,37 @@
         ],
         "category": "compact-computers",
         "description": "Personally I like to see the hardware i’m using, so I decided to give building my own pc a shot.When looking for a powerful (gaming) computer you’ll probably come across the big, bulky and led strip riden towers which will consume about half your desk when placed on top of it, or the ultra slick closed aluminum boxes you can hide under your desk. This gave me 2 starting points; a see through case for my computer that would fit on my desk. I also wanted the case to be compact but modular for further expansion, so I used legos to build the base of the case."
+    },
+
+    "Unit01-'Brickbase'-Tshirts": {
+        "src": "img/pcshirts/6.png",
+        "images": [
+            "img/pcshirts/1.png",
+            "img/pcshirts/2.png",
+            "img/pcshirts/3.png",
+            "img/pcshirts/4.png",
+            "img/pcshirts/5.png",
+            "img/pcshirts/6.png",
+            "img/pcshirts/7.png",
+            "img/pcshirts/8.png",
+            "img/pcshirts/9.png",
+            "img/pcshirts/10.png",
+            "img/pcshirts/11.png"
+        ],
+        "category": "Working-Wears",
+        "description": "placeholder"
+    },
+
+    "Self-made-me": {
+        "src": "img/selfmademe/4.png",
+        "images": [
+            "img/selfmademe/1.png",
+            "img/selfmademe/2.png",
+            "img/selfmademe/3.png",
+            "img/selfmademe/4.png",
+            "img/selfmademe/5.png",
+        ],
+        "category": "Working-Wears",
+        "description": "placeholder"
     }
 }
