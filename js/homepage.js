@@ -71,6 +71,7 @@ $.getJSON( "data/data.json", function(data) {
     
     // create slider with id 0
     createSlider(data, IMG_COUNT, 'a');
-}).fail(function() {
+}).fail(function(err) {
     alert('error loading data');
+    console.log(err);
 });
