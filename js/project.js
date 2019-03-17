@@ -84,7 +84,7 @@ $.getJSON( "data/data.json", function(data) {
     const IMG_COUNT = Object.keys(images).length;
 
     // create the slider
-    createSlider(images, IMG_COUNT, page);
+    createSlider(images, IMG_COUNT, page.replace(/['"]/g, ''));
 }).fail(function(err) {
     alert('error loading data');
     console.log(err);
