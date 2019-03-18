@@ -3,18 +3,18 @@ function createSlider(images, id, last) {
     const IMG_COUNT = images.images.length;
 
     // create slider elements
-    id = id.replace(/'/g, '');
-    var idFormat = id.replace(/-/g, ' ').toUpperCase();
-    var newContainer = $(`<div class="container" id="${id}"></div>`);
+    var cleanId = id.replace(/'/g, '');
+    var idFormat = cleanId.replace(/-/g, ' ').toUpperCase();
+    var newContainer = $(`<div class="container" id="${cleanId}"></div>`);
     $('<hr>').insertAfter('#project_name');
     $(newContainer).insertAfter('#project_name');
     $('<hr>').insertAfter('#project_name');
     $(`<p class="project">${idFormat}</p>`).insertAfter('#project_name');
-    var container = $(`#${id}`);
+    var container = $(`#${cleanId}`);
 
     // create img elements and load source
     for (let i in images.images) {
-        var img = $(`<a class="image" href="#">
+        var img = $(`<a class="image" href="project.html?p=${id}">
             <img src="${images.images[i]}"/></a>`);
         container.append(img);
     }

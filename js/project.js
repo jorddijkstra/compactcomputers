@@ -8,7 +8,7 @@ function createSlider(images, IMG_COUNT, id) {
 
     // create img elements and load source
     for (let i in images) {
-        var img = $(`<a class="image" href="${images[i]}">
+        var img = $(`<a class="image" href="image.html?i=${images[i]}">
             <img src="${images[i]}"/></a>`);
         container.append(img);
     }
