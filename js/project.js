@@ -70,12 +70,10 @@ $.getJSON( "data/data.json", function(data) {
     // change scores with spaces to look nice
     var pageFormat = page.replace(/-/g, ' ');
     // create page title
-    document.title = `${pageFormat} - Compact Computers`;
+    document.title = `${pageFormat} | Compact Computers`;
     // create name of slider
     $('#project_name').text(pageFormat.toUpperCase());
-    // add link to about page
     $('#project_name').append('<span><a href="about.html">ABOUT</a></span>');
-    
     // add description
     $('#desc').text(data[page].description);
     

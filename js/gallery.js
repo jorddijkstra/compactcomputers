@@ -1,19 +1,21 @@
-function createSlider(images) {
-    // get length of image list
-    const IMG_COUNT = Object.keys(images).length;
+function createSlider(images, id, last) {
+    // get the image count
+    const IMG_COUNT = images.images.length;
 
     // create slider elements
-    var newContainer = $(`<div class="container" id="a"></div>`);
+    id = id.replace(/'/g, '');
+    var idFormat = id.replace(/-/g, ' ').toUpperCase();
+    var newContainer = $(`<div class="container" id="${id}"></div>`);
     $('<hr>').insertAfter('#project_name');
     $(newContainer).insertAfter('#project_name');
     $('<hr>').insertAfter('#project_name');
-    var container = $(`#a`);
-    
+    $(`<p class="project">${idFormat}</p>`).insertAfter('#project_name');
+    var container = $(`#${id}`);
 
     // create img elements and load source
-    for (let i in images) {
-        var img = $(`<a class="image" href="project.html?p=${i}">
-            <img src="${images[i].src}"/></a>`);
+    for (let i in images.images) {
+        var img = $(`<a class="image" href="#">
+            <img src="${images.images[i]}"/></a>`);
         container.append(img);
     }
 
@@ -67,33 +69,20 @@ function createSlider(images) {
     });
 }
 
-function createMenu(data) {
+$.getJSON('data/data.json', function(data) {
+    // get parameters (project number)
+    let category = new URLSearchParams(window.location.search).get('c');
 
-    var categorySet = [];
-    $('body').append('<ul id="menu">HOME</ul>');
-    
+    // change scores with spaces to look nice
+    var categoryFormat = category.replace(/-/g, ' ');
+    // create page title
+    document.title = `${categoryFormat} | Compact Computers`;
+
     for (var entry in data) {
-        var category = data[entry].category;
-
-        // only add to the set if it's not there yet
-        if (!categorySet.includes(category)) {
-            categorySet.push(category);
-            var formattedCategory = category.replace(/-/g, ' ');
-            $('#menu').append(`<li><a href="gallery.html?c=${category}">
-                ${formattedCategory}</a></li>`);
+        if (data[entry].category === category) {
+            createSlider(data[entry], entry);
         }
     }
-
-    // create menu
-
-}
-
-$.getJSON("data/data.json", function(data) {
-    // create the slider 
-    createSlider(data);
-
-    // and create category menu
-    createMenu(data);
 }).fail(function(err) {
     alert('error loading data');
     console.log(err);

@@ -19,6 +19,27 @@ body {
     color: #fff;
 }
 
+hr {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    font-family: 'din-medium', helvetica, sans-serif;
+    padding-left: 30px;
+}
+
+li {
+    font-family: 'din-light', helvetica, sans-serif;
+    margin-top: 12px;
+    font-size: 13pt;
+}
+
+li:first-child {
+    margin-top: 15px;
+}
+
+
 /* links are always white */
 a, a:visited, a:hover, a:active {
     color: #fff;
@@ -59,6 +80,22 @@ hr {
     float: right;
 }
 
+.project {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 45px;
+    text-align: left;
+    font-family: 'din-medium', helvetica, sans-serif;
+}
+
+.project:hover {
+    cursor: default;
+}
+
+.project span {
+    float: right;
+}
+
 .image {
     height: 230px;
 }
@@ -79,6 +116,8 @@ body {
     white-space: nowrap;
     /* let user scroll through galery */
     overflow: scroll;
+    /* don't show scrollbar in firefox */
+    scrollbar-width: none
 }
 
 ::-webkit-scrollbar {
@@ -103,6 +142,8 @@ body {
     margin-top: 100px;
 }
 
+
+/* LOGIN PAGE */
 #popup {
     height: 400px;
     display: block;
