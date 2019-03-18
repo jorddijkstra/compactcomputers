@@ -8,8 +8,7 @@ function createSlider(images, IMG_COUNT, id) {
 
     // create img elements and load source
     for (let i in images) {
-        var img = $(`<a class="image" href="image.html?i=${images[i]}">
-            <img src="${images[i]}"/></a>`);
+        var img = $(`<a class="image"><img src="${images[i]}"/></a>`);
         container.append(img);
     }
 
@@ -83,6 +82,16 @@ $.getJSON( "data/data.json", function(data) {
 
     // create the slider
     createSlider(images, IMG_COUNT, page.replace(/['"]/g, ''));
+
+    $('.container img').on('click', function() {
+        var src = this.src;
+        var h = this.naturalHeight;
+        var w = this.naturalWidth;
+        console.log({h, w});
+        var options = `height=${h},width=${w},menubar=0,scrollbars=0,status=0,titlebar=0,toolbar=0,`;
+        window.open(`image.html?i=${src}`, '', options);
+    });
+
 }).fail(function(err) {
     alert('error loading data');
     console.log(err);
