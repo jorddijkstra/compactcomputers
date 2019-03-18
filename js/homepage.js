@@ -83,9 +83,6 @@ function createMenu(data) {
                 ${formattedCategory}</a></li>`);
         }
     }
-
-    // create menu
-
 }
 
 $.getJSON("data/data.json", function(data) {

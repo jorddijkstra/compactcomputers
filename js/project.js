@@ -62,6 +62,24 @@ function createSlider(images, IMG_COUNT, id) {
     });
 }
 
+function createMenu(data) {
+
+    var categorySet = [];
+    $('<ul id="menu">HOME</ul>').insertBefore('#desc');
+    
+    for (var entry in data) {
+        var category = data[entry].category;
+
+        // only add to the set if it's not there yet
+        if (!categorySet.includes(category)) {
+            categorySet.push(category);
+            var formattedCategory = category.replace(/-/g, ' ');
+            $('#menu').append(`<li><a href="gallery.html?c=${category}">
+                ${formattedCategory}</a></li>`);
+        }
+    }
+}
+
 $.getJSON( "data/data.json", function(data) {
     // get parameters (project number)
     let page = new URLSearchParams(window.location.search).get('p');
@@ -82,6 +100,9 @@ $.getJSON( "data/data.json", function(data) {
 
     // create the slider
     createSlider(images, IMG_COUNT, page.replace(/['"]/g, ''));
+
+    // and create category menu
+    createMenu(data);
 
     $('.container img').on('click', function() {
         var src = this.src;

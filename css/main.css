@@ -27,6 +27,7 @@ ul {
     list-style-type: none;
     font-family: 'din-medium', helvetica, sans-serif;
     padding-left: 30px;
+    display: inline-block;
 }
 
 li {
@@ -140,6 +141,8 @@ body {
     width: 60%;
     margin: 0 auto;
     margin-top: 100px;
+    display: inline-block;
+    margin-left: 10%;
 }
 
 
