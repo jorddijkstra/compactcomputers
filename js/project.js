@@ -93,7 +93,7 @@ $.getJSON( "data/data.json", function(data) {
     $('#project_name').append('<span><a href="about.html">ABOUT</a></span>');
     // add description
     $('#desc').text(data[page].description);
-    
+
     // define images and count them
     images = data[page].images;
     const IMG_COUNT = Object.keys(images).length;
@@ -104,12 +104,13 @@ $.getJSON( "data/data.json", function(data) {
     // and create category menu
     createMenu(data);
 
+    // open image in new window when clicked
     $('.container img').on('click', function() {
         var src = this.src;
         var h = this.naturalHeight;
         var w = this.naturalWidth;
         console.log({h, w});
-        var options = `height=${h},width=${w},menubar=0,scrollbars=0,status=0,titlebar=0,toolbar=0,`;
+        var options = `height=${h},width=${w},menubar=0,scrollbars=0,status=0,titlebar=0,toolbar=0`;
         window.open(`image.html?i=${src}`, '', options);
     });
 
