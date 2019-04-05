@@ -8,7 +8,7 @@ function createSlider(images) {
     $(newContainer).insertAfter('#project_name');
     $('<hr>').insertAfter('#project_name');
     var container = $(`#a`);
-    
+
 
     // create img elements and load source
     for (let i in images) {
@@ -43,7 +43,7 @@ function createSlider(images) {
     for (let i = 0; i < clones1.length; i++) {
         container.append(clones2[i]);
     }
-    
+
     // Step 3: Adding an infinite scroll effect
     var sliderStartForward = $('.image').eq(IMG_COUNT - 1).offset().left;
     var sliderEndForward = $('.image').eq(2 * (IMG_COUNT - 1)).offset().right - 10;
@@ -71,7 +71,7 @@ function createMenu(data) {
 
     var categorySet = [];
     $('body').append('<ul id="menu">HOME</ul>');
-    
+
     for (var entry in data) {
         var category = data[entry].category;
 
@@ -86,7 +86,7 @@ function createMenu(data) {
 }
 
 $.getJSON("data/data.json", function(data) {
-    // create the slider 
+    // create the slider
     createSlider(data);
 
     // and create category menu
