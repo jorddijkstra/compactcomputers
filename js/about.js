@@ -1,7 +1,7 @@
 function createMenu(data) {
 
     var categorySet = [];
-    $('body').append('<ul id="menu">HOME</ul>');
+    $('<ul id="menu">HOME</ul>').insertBefore('#desc');
 
     for (var entry in data) {
         var category = data[entry].category;
