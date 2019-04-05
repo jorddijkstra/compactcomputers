@@ -15,6 +15,8 @@ Plak dit achter het middelste object:
     "description": ""
 },
 ```
+Paragrafen kunnen worden ingevoerd door `<br><br>`. Enkel een nieuwe regel
+kan worden gedaan door `<br>`.
 
 # Test file
 Kopieer altijd de inhoud van het bestand `data/data.json` op

@@ -38,7 +38,7 @@ function createSlider(images, IMG_COUNT, id) {
     for (let i = 0; i < clones1.length; i++) {
         container.append(clones2[i]);
     }
-    
+
     // Step 3: Adding an infinite scroll effect
     var sliderStartForward = $('.image').eq(IMG_COUNT - 1).offset().left;
     var sliderEndForward = $('.image').eq(2 * (IMG_COUNT - 1)).offset().right - 10;
@@ -66,7 +66,7 @@ function createMenu(data) {
 
     var categorySet = [];
     $('<ul id="menu">HOME</ul>').insertBefore('#desc');
-    
+
     for (var entry in data) {
         var category = data[entry].category;
 
@@ -92,7 +92,7 @@ $.getJSON( "data/data.json", function(data) {
     $('#project_name').text(pageFormat.toUpperCase());
     $('#project_name').append('<span><a href="about.html">ABOUT</a></span>');
     // add description
-    $('#desc').text(data[page].description);
+    $('#desc').append(data[page].description);
 
     // define images and count them
     images = data[page].images;
