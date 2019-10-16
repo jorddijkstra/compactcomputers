@@ -61,6 +61,20 @@
         "description": "I was looking for studio lights online late at night because I wanted to photograph something I'd been working on. When I came back into my room after grabbing something to eat I noticed how my tv screen was lighting up almost my entire room. So I decided to flip the screen horizontally and started experimenting with the light that shone down on the studio I had built."
     },
 
+    "Shared-Vision": {
+        "src": "img/sharedvision/1.png",
+        "images": [
+            "imgsharedvision/1.png",
+            "img/sharedvision/2.png",
+            "img/sharedvision/3.png",
+            "img/sharedvision/4.png",
+            "img/sharedvision/5.png",
+            "img/sharedvision/6.png"
+        ],
+        "category": "spatial-sketches",
+        "description": "Have you always dreamed of seeing the world through someone else’s eyes? Are you not easily scared by some out of body experiences and possible swapping of bodies? Then you're the one were looking for! You're the one whos gonna help us develop Vision Share! Here at Compact Computers we throw science at the wall and see what sticks. Vision Share, a vision for the future you and me are sharing.  "
+    },
+
     "Future-Photos": {
         "src": "img/futurephotos/4.png",
         "images": [
